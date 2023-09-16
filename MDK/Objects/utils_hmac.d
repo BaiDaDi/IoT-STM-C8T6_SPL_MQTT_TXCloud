@@ -1,0 +1,10 @@
+.\objects\utils_hmac.o: ..\HAL\HMAC\src\utils_hmac.c
+.\objects\utils_hmac.o: ..\HAL\HMAC\inc\utils_hmac.h
+.\objects\utils_hmac.o: D:\App\MDK5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\utils_hmac.o: D:\App\MDK5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\utils_hmac.o: D:\App\MDK5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\utils_hmac.o: D:\App\MDK5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\utils_hmac.o: ..\HAL\HMAC\inc\utils_md5.h
+.\objects\utils_hmac.o: ..\HAL\HMAC\inc\utils_sha1.h
+.\objects\utils_hmac.o: ..\HAL\HMAC\inc\sha256.h
+.\objects\utils_hmac.o: D:\App\MDK5\ARM\ARMCC\Bin\..\include\stddef.h
