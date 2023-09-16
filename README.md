@@ -16,7 +16,7 @@
 		库版本：HAL库函数
 		注意：	LED灯 RGB IO分配//注，C8T6只有pc13可控led
   
-			ESP8266连接
+			ESP-01连接
 			TX	PA3//uart2
 			RX	PA2
    			EN      3.3V
