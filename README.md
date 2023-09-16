@@ -1,6 +1,11 @@
 # IoT-STM-C8T6_SPL_MQTT_TXCloud
 
-  https://blog.csdn.net/weixin_43352501/article/details/124304941?ops_request_misc=&request_id=&biz_id=102&utm_term=stm32f103c8t6+8266+%E8%85%BE%E8%AE%AF%E4%BA%91&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~sobaiduweb~default-9-124304941.nonecase
+一种使用标准库架构的STM32F103C8T6通过ESP8266模块以MQTT协议连接腾讯云的解决方案
+
+
+ 
+参考CSDN：
+	https://blog.csdn.net/weixin_43352501/article/details/124304941?ops_request_misc=&request_id=&biz_id=102&utm_term=stm32f103c8t6+8266+%E8%85%BE%E8%AE%AF%E4%BA%91&utm_medium=distribute.pc_search_result.none-task-blog-2~blog~sobaiduweb~default-9-124304941.nonecase
 
 
 		本工程实例现象：
@@ -9,21 +14,18 @@
 		工程适用范围：测试时适用的STM32F103C8T6
 		库版本：HAL库函数
 		注意：	LED灯 RGB IO分配//注，C8T6只有pc13可控led
-		
-				R	PB5
-				G	PB6
-				B	PB7
-				
-				ESP8266连接
-				TX	PA3//uart2
-				RX	PA2
-				RST	PB11（在ESP8266.h中进行宏定义改变）//c8t6可用
-				VCC	3.3V
-				
-				串口打印信息
-				USB转TTL
-				RXD PA9//uart1
-				TXD	PA10
+  
+			ESP8266连接
+			TX	PA3//uart2
+			RX	PA2
+   			EN      3.3V
+			RST	PB11（在ESP8266.h中进行宏定义改变）//c8t6可用
+			VCC	3.3V
+			
+			串口打印信息
+			USB转TTL
+			RXD PA9//uart1
+			TXD	PA10
 				
 		如果进行移植：需要改动的地方，首先如果硬件连接和上述一样，那不需要进行改动；
 		在云端连接方面修改#include "tencent_mqtt.h"中的内容
@@ -47,6 +49,5 @@
 		2.再将腾讯云主题中的主题内容进行对应修改自己的即可
 		
 		3.ESP_Client_ConnectServer(0,(u8 *)Server_Addr,"1883","neo5","123123123"); 
-		将下方187行处代码，	neo5是笔者手机的热点名称
-							123123123是笔者手机热点的密码
+		将下方187行处代码，	neo5是笔者手机的热点名称	123123123是笔者手机热点的密码
 
